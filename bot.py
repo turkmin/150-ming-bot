@@ -27,8 +27,9 @@ PROXY_URL = "http://proxy.server:3128"
 logging.basicConfig(level=logging.INFO)
 
 session = AiohttpSession(proxy=PROXY_URL) if PROXY_URL else None
-bot = Bot(token=BOT_TOKEN, session=session)
-dp = Dispatcher(storage=MemoryStorage())
+# Shunday holatga o'zgartiring:
+bot = Bot(token="9025226513:AAEqqDwGRjwyDn-oWKUiGe6OSqhsD_s9Jo4")
+dp = Dispatcher()
 
 # Buyurtma holatlari (FSM)
 class OrderForm(StatesGroup):
