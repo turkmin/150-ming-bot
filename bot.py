@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.client.session.aiohttp import AiohttpSession
+# AiohttpSession vaqtinchalik olib tashlandi (proksi kerak emasligi uchun)
 from aiogram.types import (
     ReplyKeyboardMarkup,
     KeyboardButton,
@@ -27,7 +27,7 @@ PROXY_URL = "http://proxy.server:3128"
 logging.basicConfig(level=logging.INFO)
 
 # Proksisiz oddiy holat:
-bot = Bot(token="9025226513:AAEqqDwGRjwyDn-oWKUiGe6OSqhsD_s9Jo4")
+bot = Bot(token=9025226513:AAEqqDwGRjwyDn-oWKUiGe6OSqhsD_s9Jo4)
 dp = Dispatcher()
 
 # Buyurtma holatlari (FSM)
